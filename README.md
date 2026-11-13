@@ -48,4 +48,5 @@ flowchart LR
 
 Both `main` and `feature/unit-conversions` are retained to show the merge workflow. The CI enhancement is automated testing; the deployment enhancements are health probes and external configuration through a ConfigMap.
 
-This is a local classroom demo. Run Ansible and Kubernetes from Ubuntu or WSL with systemd and Docker available. No paid cloud account is needed.
+This is a local classroom demo. Run Ansible and Kubernetes from Ubuntu or WSL with systemd and Docker available. No paid cloud account is required.
+
