@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.pdf binary
+*.png binary
+*.jpg binary
+evidences/logs/*.txt whitespace=-blank-at-eol

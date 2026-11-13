@@ -1,0 +1,13 @@
+target/
+.tools/
+.idea/
+.vscode/
+.env
+*.pem
+*.key
+*.log
+submission/
+reports/overleaf/*.aux
+reports/overleaf/*.out
+reports/overleaf/*.toc
+reports/overleaf/main.pdf
