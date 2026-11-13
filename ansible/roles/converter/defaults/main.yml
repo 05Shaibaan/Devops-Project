@@ -1,0 +1,5 @@
+---
+app_port: 8093
+app_directory: /opt/unit-converter
+app_user: unit-converter
+app_jar: "{{ playbook_dir }}/../target/unit-converter.jar"
