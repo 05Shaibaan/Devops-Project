@@ -1,0 +1,5 @@
+2026-11-13T23:44:07+05:30
+Command: kubectl --context kind-converter-demo get nodes -o wide
+
+NAME                           STATUS   ROLES           AGE   VERSION   INTERNAL-IP   EXTERNAL-IP   OS-IMAGE                         KERNEL-VERSION                     CONTAINER-RUNTIME
+converter-demo-control-plane   Ready    control-plane   63s   v1.35.0   172.18.0.3    <none>        Debian GNU/Linux 12 (bookworm)   6.6.87.2-microsoft-standard-WSL2   containerd://2.2.0

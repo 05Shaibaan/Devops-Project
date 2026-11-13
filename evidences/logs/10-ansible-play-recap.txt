@@ -1,0 +1,78 @@
+2026-11-13T23:40:29+05:30
+Command: ansible-playbook -i inventory playbook.yml
+
+
+PLAY [Configure the Unit Converter API server] *********************************
+
+TASK [Gathering Facts] *********************************************************
+[WARNING]: Host 'localhost' is using the discovered Python interpreter at '/usr/bin/python3.14', but future installation of another Python interpreter could cause a different interpreter to be discovered. See https://docs.ansible.com/ansible-core/2.20/reference_appendices/interpreter_discovery.html for more information.
+ok: [localhost]
+
+TASK [converter : Install the Java runtime] ************************************
+ok: [localhost]
+
+TASK [converter : Create a service account] ************************************
+changed: [localhost]
+
+TASK [converter : Create the application directory] ****************************
+changed: [localhost]
+
+TASK [converter : Copy the built application] **********************************
+changed: [localhost]
+
+TASK [converter : Install the service definition] ******************************
+changed: [localhost]
+
+TASK [converter : Apply pending service changes] *******************************
+
+RUNNING HANDLER [converter : Restart unit converter] ***************************
+changed: [localhost]
+
+TASK [converter : Enable and start the service] ********************************
+changed: [localhost]
+
+TASK [converter : Wait for the API to become healthy] **************************
+FAILED - RETRYING: [localhost]: Wait for the API to become healthy (20 retries left).
+ok: [localhost]
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=9    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+Second unchanged run:
+
+PLAY [Configure the Unit Converter API server] *********************************
+
+TASK [Gathering Facts] *********************************************************
+[WARNING]: Host 'localhost' is using the discovered Python interpreter at '/usr/bin/python3.14', but future installation of another Python interpreter could cause a different interpreter to be discovered. See https://docs.ansible.com/ansible-core/2.20/reference_appendices/interpreter_discovery.html for more information.
+ok: [localhost]
+
+TASK [converter : Install the Java runtime] ************************************
+ok: [localhost]
+
+TASK [converter : Create a service account] ************************************
+ok: [localhost]
+
+TASK [converter : Create the application directory] ****************************
+ok: [localhost]
+
+TASK [converter : Copy the built application] **********************************
+ok: [localhost]
+
+TASK [converter : Install the service definition] ******************************
+ok: [localhost]
+
+TASK [converter : Apply pending service changes] *******************************
+
+TASK [converter : Enable and start the service] ********************************
+ok: [localhost]
+
+TASK [converter : Wait for the API to become healthy] **************************
+ok: [localhost]
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=8    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+Service response:
+{"input":25.0,"inputUnit":"celsius","result":77.0,"outputUnit":"fahrenheit"}

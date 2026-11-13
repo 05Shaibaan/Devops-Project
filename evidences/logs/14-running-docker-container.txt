@@ -1,0 +1,8 @@
+2026-11-13T23:41:14+05:30
+Command: docker ps --filter name=converter-evidence
+
+CONTAINER ID   IMAGE                COMMAND                  CREATED         STATUS         PORTS                      NAMES
+48bb5b86e4b7   unit-converter:1.0   "java -XX:MaxRAMPerc…"   4 seconds ago   Up 3 seconds   127.0.0.1:8095->8080/tcp   converter-evidence
+
+GET /distance?kilometres=5
+{"input":5.0,"inputUnit":"kilometres","result":3.1069,"outputUnit":"miles"}

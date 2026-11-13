@@ -1,0 +1,11 @@
+2026-11-13T23:44:10+05:30
+Command: kubectl --context kind-converter-demo -n converter-demo port-forward service/unit-converter 8096:8080
+
+GET /health
+{"status":"UP"}
+
+GET /temperature?celsius=25
+{"input":25.0,"inputUnit":"celsius","result":77.0,"outputUnit":"fahrenheit"}
+
+GET /distance?kilometres=5
+{"input":5.0,"inputUnit":"kilometres","result":3.1069,"outputUnit":"miles"}

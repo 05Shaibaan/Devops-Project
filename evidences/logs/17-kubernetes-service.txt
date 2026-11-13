@@ -1,0 +1,5 @@
+2026-11-13T23:44:09+05:30
+Command: kubectl --context kind-converter-demo -n converter-demo get svc unit-converter
+
+NAME             TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)    AGE
+unit-converter   ClusterIP   10.96.94.188   <none>        8080/TCP   21s

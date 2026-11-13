@@ -1,0 +1,21 @@
+2026-11-13T23:40:28+05:30
+ansible-galaxy role init converter
+Role initialized before configuration.
+
+Inventory:
+[app_servers]
+localhost ansible_connection=local
+
+Playbook:
+---
+- name: Configure the Unit Converter API server
+  hosts: app_servers
+  become: true
+  roles:
+    - converter
+
+Role files:
+ansible/roles/converter/defaults/main.yml
+ansible/roles/converter/handlers/main.yml
+ansible/roles/converter/tasks/main.yml
+ansible/roles/converter/templates/unit-converter.service.j2

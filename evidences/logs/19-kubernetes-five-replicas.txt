@@ -1,0 +1,19 @@
+2026-11-13T23:44:10+05:30
+Command: kubectl scale deployment/unit-converter --replicas=5
+
+deployment.apps/unit-converter scaled
+Waiting for deployment "unit-converter" rollout to finish: 3 of 5 updated replicas are available...
+Waiting for deployment "unit-converter" rollout to finish: 4 of 5 updated replicas are available...
+deployment "unit-converter" successfully rolled out
+deployment.apps/unit-converter condition met
+pod/unit-converter-bb776f9c6-68hqq condition met
+pod/unit-converter-bb776f9c6-f8vqv condition met
+pod/unit-converter-bb776f9c6-fqzqt condition met
+pod/unit-converter-bb776f9c6-gp7wd condition met
+pod/unit-converter-bb776f9c6-gt6r7 condition met
+NAME                             READY   STATUS    RESTARTS   AGE
+unit-converter-bb776f9c6-68hqq   1/1     Running   0          17s
+unit-converter-bb776f9c6-f8vqv   1/1     Running   0          40s
+unit-converter-bb776f9c6-fqzqt   1/1     Running   0          40s
+unit-converter-bb776f9c6-gp7wd   1/1     Running   0          40s
+unit-converter-bb776f9c6-gt6r7   1/1     Running   0          17s
