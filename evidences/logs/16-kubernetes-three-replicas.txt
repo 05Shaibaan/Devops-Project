@@ -1,0 +1,7 @@
+2026-11-13T23:44:08+05:30
+Command: kubectl --context kind-converter-demo -n converter-demo get pods -l app=unit-converter
+
+NAME                             READY   STATUS    RESTARTS   AGE
+unit-converter-bb776f9c6-f8vqv   1/1     Running   0          21s
+unit-converter-bb776f9c6-fqzqt   1/1     Running   0          21s
+unit-converter-bb776f9c6-gp7wd   1/1     Running   0          21s

@@ -1,0 +1,14 @@
+2026-11-13T18:09:31+00:00
+Executable JAR started with APP_PORT=8094 java -jar target/unit-converter.jar
+
+GET /health
+{"status":"UP"}
+
+GET /temperature?celsius=25
+{"input":25.0,"inputUnit":"celsius","result":77.0,"outputUnit":"fahrenheit"}
+
+GET /distance?kilometres=5
+{"input":5.0,"inputUnit":"kilometres","result":3.1069,"outputUnit":"miles"}
+
+GET /distance?kilometres=-1 (invalid input)
+HTTP 400

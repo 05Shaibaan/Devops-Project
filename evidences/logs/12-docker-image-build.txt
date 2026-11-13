@@ -1,0 +1,29 @@
+2026-11-13T23:41:03+05:30
+Command: /usr/bin/docker build -t unit-converter:1.0 .
+
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  21.18MB
+Step 1/6 : FROM eclipse-temurin:17-jre-jammy
+ ---> 2a9eb226abb6
+Step 2/6 : WORKDIR /app
+ ---> Using cache
+ ---> 2a3f4b699abd
+Step 3/6 : COPY --chown=10001:10001 target/unit-converter.jar app.jar
+ ---> 51d0e76f5421
+Step 4/6 : USER 10001:10001
+ ---> Running in b5d3ebf5519c
+ ---> Removed intermediate container b5d3ebf5519c
+ ---> dc6daa766931
+Step 5/6 : EXPOSE 8080
+ ---> Running in 36db520eb901
+ ---> Removed intermediate container 36db520eb901
+ ---> 51fda316be25
+Step 6/6 : ENTRYPOINT ["java", "-XX:MaxRAMPercentage=75.0", "-jar", "app.jar"]
+ ---> Running in 4c3d4dc67a4d
+ ---> Removed intermediate container 4c3d4dc67a4d
+ ---> 7a25a0f92182
+Successfully built 7a25a0f92182
+Successfully tagged unit-converter:1.0
