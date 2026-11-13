@@ -44,7 +44,7 @@ flowchart LR
 - `scripts/`: deployment and scaling commands.
 - `docs/setup.md`: complete setup and demonstration steps.
 - `evidences/`: this project's screenshots and original execution logs.
-- `reports/`: college-format report and editable LaTeX source.
+- [`reports/DevOps_Report_Syed_Shaibaan_Hussain.pdf`](reports/DevOps_Report_Syed_Shaibaan_Hussain.pdf): college-format report, with editable LaTeX in `reports/overleaf/`.
 
 Both `main` and `feature/unit-conversions` are retained to show the merge workflow. The CI enhancement is automated testing; the deployment enhancements are health probes and external configuration through a ConfigMap.
 
