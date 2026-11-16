@@ -6,8 +6,8 @@ Screenshots 01-05 and 07-08 show GitHub and Jenkins pages. Screenshot 06 shows a
 
 | No. | Evidence |
 | --- | --- |
-| 01 | [GitHub branches](01-github-branches.jpg) |
-| 02 | [Merge history](02-github-merge-history.jpg) |
+| 01 | [Historical 13 November branch capture](01-github-branches.jpg) |
+| 02 | [Archived 13 November merge history, before the PR rebuild](02-github-merge-history.jpg) |
 | 03 | [Jenkins repository configuration](03-jenkins-repository-configuration.jpg) |
 | 04 | [Jenkins SCM polling](04-jenkins-scm-trigger.jpg) |
 | 05 | [Successful pipeline](05-jenkins-successful-pipeline.jpg) |
@@ -29,3 +29,5 @@ Screenshots 01-05 and 07-08 show GitHub and Jenkins pages. Screenshot 06 shows a
 | 21 | [ConfigMap and health probes](21-configmap-settings.jpg) |
 
 The cluster is Kind `converter-demo`, the namespace is `converter-demo`, and the Deployment/Service is `unit-converter`. Kind is one of the local cluster options allowed by the assignment. These resource names follow the actual application.
+
+[Recorded PR metadata](logs/pull-request-1.json), [current Git history](logs/git-pr-history.txt) and [merged PR #1](https://github.com/05Shaibaan/Devops-Project/pull/1) verify the actual GitHub merge on 16 November 2026 at 14:54:58 IST. Images 01-08 remain the original historical captures from 13 November; image 02 predates the PR rebuild and does not describe current main. The refreshed raw Jenkins logs record successful build #5 after PR #1. Deployment captures retain their original dates because the application and configuration are unchanged. The temporary remote backup branch was deleted at the owner's request; a local Git bundle retains the original history.

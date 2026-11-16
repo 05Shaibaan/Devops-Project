@@ -24,6 +24,12 @@ curl -i 'http://localhost:8080/distance?kilometres=-1'
 
 The last request must return HTTP 400. Run `mvn test` for all 15 tests. The test suite covers ordinary conversions, negative temperature, zero distance, missing parameters, malformed numbers, non-finite numbers, negative distance and the input limit.
 
+## Pull request workflow
+
+The application was integrated through [PR #1](https://github.com/05Shaibaan/Devops-Project/pull/1), merged into `main` on 16 November 2026 at 14:54:58 IST (`080c082`). Its complete file tree matches the previous completed project, including the README edit.
+
+Make changes on a feature branch, push that branch, open a GitHub PR with `main` as the base, review the changes, and use **Merge pull request**. Keep the feature branch to demonstrate branching. The original 13 November direct-merge history is saved locally in a Git bundle; the temporary remote backup branch has been deleted as requested.
+
 ## Jenkins
 
 1. Install the Pipeline, Git, JUnit and Timestamper plugins. Ensure Java and `mvn` are available to the Jenkins agent.
@@ -31,7 +37,7 @@ The last request must return HTTP 400. Run `mvn test` for all 15 tests. The test
 3. Choose **Pipeline script from SCM**, Git, repository `https://github.com/05Shaibaan/Devops-Project.git`, branch `*/main`, script path `Jenkinsfile`.
 4. Run **Build Now** once to load the pipeline and its polling trigger.
 5. Confirm Test and Build succeed, 15 tests pass, and `target/unit-converter.jar` is archived.
-6. Push a small real change to `main`. The pipeline polls every minute using `* * * * *`. The next build should say **Started by an SCM change**.
+6. Merge a small real change through a GitHub PR into `main`. The pipeline polls every minute using `* * * * *`. The next build should say **Started by an SCM change**.
 
 `mvn -B clean test` executes the tests first. `mvn -B -DskipTests package` then packages the already-tested classes. Packaging is never reached after a failing Test stage. JUnit publishes the test report, and archive fingerprinting identifies the exact JAR.
 

@@ -374,16 +374,16 @@ server.shutdown=graceful
 
 \subsubsection*{Git Repository and Branching}
 
-The repository started empty. Setup was committed on \texttt{main}; the API, tests and deployment files were developed on \texttt{feature/unit-conversions}. Merge commit \texttt{8ed7386} joins the feature branch into main. Both branches are retained on GitHub, and the commits are attributed to Syed Shaibaan Hussain through account \texttt{05Shaibaan}.
+The repository started empty. Setup was committed on \texttt{main}; the API, tests and deployment files were developed on \texttt{feature/unit-conversions}. The feature was integrated through GitHub pull request \#1, merged by \texttt{05Shaibaan} on 16 November 2026 at 14:54:58 IST. Merge commit \texttt{080c082} records the PR merge. Both branches are retained, and the commits are attributed to Syed Shaibaan Hussain. PR: \url{https://github.com/05Shaibaan/Devops-Project/pull/1}.
 
 \begin{lstlisting}[language=bash]
 git switch -c feature/unit-conversions
 git add src
 git commit -m "Add temperature and distance conversions with input checks"
-git switch main
-git merge --no-ff feature/unit-conversions -m "Merge the converter API and its DevOps pipeline"
-git push -u origin main feature/unit-conversions
+git push -u origin feature/unit-conversions
 \end{lstlisting}
+
+On GitHub, select \texttt{main} as the base and \texttt{feature/unit-conversions} as the compare branch, create the pull request, check its changes, then use Merge pull request. The earlier direct merge from 13 November is retained in a local Git history bundle; the temporary remote backup branch was deleted at the owner\textquotesingle s request. The PR uses its actual 16 November merge timestamp.
 
 \subsubsection*{Maven Build Configuration}
 
@@ -572,17 +572,43 @@ class ConversionControllerTest {
 
 \subsection*{Description of the Activity}
 
-The conversion checks were written before the controller implementation. After implementing the routes, the Maven build passed and the JAR returned 77 Fahrenheit for 25 Celsius and 3.1069 miles for 5 kilometres. The feature branch was merged, Jenkins was configured from GitHub, and a later evidence commit was pushed without pressing Build Now again. SCM polling detected that change and ran the pipeline automatically.
+The conversion checks were written before the controller implementation. After implementing the routes, the Maven build passed and the JAR returned 77 Fahrenheit for 25 Celsius and 3.1069 miles for 5 kilometres. On 16 November, the integration was rebuilt through PR \#1 while preserving the complete application, reports and earlier evidence. Jenkins detected the updated main branch through SCM polling and ran the tests and packaging automatically. The deployment screenshots retain their original capture dates because the application and deployment configuration were unchanged.
 
 \subsection*{Results}
 
-Jenkins build \#2 completed with \texttt{SUCCESS} after an SCM change. All 15 tests passed, with zero failures and zero skipped cases. The build archived \texttt{target/unit-converter.jar}. Screenshots below show the repository, configuration, successful execution and test results. Full console output is retained in \texttt{evidences/logs/jenkins-console.txt}.
+Jenkins build \#5 completed with \texttt{SUCCESS} after an SCM change. All 15 tests passed, with zero failures and zero skipped cases. The build archived \texttt{target/unit-converter.jar}. Screenshots below show the repository, configuration, successful execution and test results. Full console output is retained in \texttt{evidences/logs/jenkins-console.txt}.
+
+The current PR record below was verified from GitHub. The retained screenshots are historical captures from 13 November, before the PR-based history rebuild, and are labelled accordingly. Current merge proof is recorded in \texttt{evidences/logs/pull-request-1.json} and \texttt{evidences/logs/git-pr-history.txt}; the refreshed Jenkins logs record the successful build after the new PR merge.
+
+\begin{lstlisting}
+{
+  "number": 1,
+  "html_url": "https://github.com/05Shaibaan/Devops-Project/pull/1",
+  "merged_at": "2026-11-16T09:24:58Z",
+  "merge_commit_sha": "080c08249efb87d8a0ca70776e2dd24b27c6977e",
+  "merged_by": "05Shaibaan"
+}
+\end{lstlisting}
+
+\begin{lstlisting}
+Started by an SCM change
+[Pipeline] { (Test)
+[2026-11-16T09:25:40.210Z] + mvn -B clean test
+[2026-11-16T09:27:06.412Z] [INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.788 s -- in io.github.shaibaan.converter.ConversionControllerTest
+[2026-11-16T09:27:06.412Z] [INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0
+[2026-11-16T09:27:06.412Z] [INFO] BUILD SUCCESS
+[Pipeline] { (Build)
+[2026-11-16T09:27:07.496Z] + mvn -B -DskipTests package
+[2026-11-16T09:28:10.993Z] [INFO] BUILD SUCCESS
+[2026-11-16T09:28:11.356Z] Archiving artifacts
+Finished: SUCCESS
+\end{lstlisting}
 
 \begin{center}\includegraphics[width=\linewidth,height=0.67\textheight,keepaspectratio]{01-github-branches.jpg}
-\par\smallskip The main and feature/unit-conversions branches on GitHub.\end{center}
+\par\smallskip Historical 13 November branch capture; both branch names are retained.\end{center}
 
 \begin{center}\includegraphics[width=\linewidth,height=0.67\textheight,keepaspectratio]{02-github-merge-history.jpg}
-\par\smallskip Commit history includes the feature merge and Shaibaan attribution.\end{center}
+\par\smallskip Archived 13 November direct-merge view, before the history was rebuilt through PR \#1.\end{center}
 
 \begin{center}\includegraphics[width=\linewidth,height=0.67\textheight,keepaspectratio]{03-jenkins-repository-configuration.jpg}
 \par\smallskip Jenkins reads this repository and the Jenkinsfile from SCM.\end{center}
@@ -591,16 +617,16 @@ Jenkins build \#2 completed with \texttt{SUCCESS} after an SCM change. All 15 te
 \par\smallskip SCM polling checks for new commits every minute.\end{center}
 
 \begin{center}\includegraphics[width=\linewidth,height=0.67\textheight,keepaspectratio]{05-jenkins-successful-pipeline.jpg}
-\par\smallskip Successful pipeline triggered automatically by an SCM change.\end{center}
+\par\smallskip Historical build \#2 succeeded; current build \#5 is verified by the logs above.\end{center}
 
 \begin{center}\includegraphics[width=\linewidth,height=0.67\textheight,keepaspectratio]{06-jenkins-test-and-build-console.jpg}
-\par\smallskip Console output confirms the tests and packaging completed.\end{center}
+\par\smallskip Historical build \#2 Test and Build console excerpt.\end{center}
 
 \begin{center}\includegraphics[width=\linewidth,height=0.67\textheight,keepaspectratio]{07-jenkins-archived-jar.jpg}
-\par\smallskip Jenkins retains the executable JAR as an archived artifact.\end{center}
+\par\smallskip Historical build \#2 archived JAR capture.\end{center}
 
 \begin{center}\includegraphics[width=\linewidth,height=0.67\textheight,keepaspectratio]{08-jenkins-passing-tests.jpg}
-\par\smallskip All fifteen automated tests passed.\end{center}
+\par\smallskip Historical build \#2 capture of fifteen passing tests.\end{center}
 
 \subsection*{Conclusion}
 

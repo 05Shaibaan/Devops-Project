@@ -1,0 +1,24 @@
+{
+  "number": 1,
+  "title": "Add the unit converter API and DevOps pipeline",
+  "html_url": "https://github.com/05Shaibaan/Devops-Project/pull/1",
+  "state": "closed",
+  "created_at": "2026-11-16T09:24:53Z",
+  "merged_at": "2026-11-16T09:24:58Z",
+  "merge_commit_sha": "080c08249efb87d8a0ca70776e2dd24b27c6977e",
+  "author": "05Shaibaan",
+  "merged_by": "05Shaibaan",
+  "head": {
+    "ref": "feature/unit-conversions",
+    "sha": "9da0bb8741fe5654afbe24893ebc891a0acd5dc5"
+  },
+  "base": {
+    "ref": "main"
+  },
+  "original_direct_merge": {
+    "sha": "8ed73864bd295638f4cfd2abce90c874b826c809",
+    "date": "2026-11-13T23:43:56+05:30",
+    "retained_in": "local Git bundle"
+  },
+  "temporary_remote_backup_deleted": true
+}

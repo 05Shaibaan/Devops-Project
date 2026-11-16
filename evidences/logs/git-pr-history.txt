@@ -1,0 +1,35 @@
+Recorded: 2026-11-16T15:30:26.398100+05:30
+
+Command: git log --graph --date=iso-strict --format=%h %ad %an %s main feature/unit-conversions
+
+*   080c082 2026-11-16T14:54:58+05:30 Syed Shaibaan Hussain Merge pull request #1 from 05Shaibaan/feature/unit-conversions
+|\  
+| * 9da0bb8 2026-11-14T01:56:29+05:30 Syed Shaibaan Hussain Update README.md
+| * 7356f8b 2026-11-14T00:03:11+05:30 Syed Shaibaan Hussain Finish the report and evidence checklist
+| * 7bf9daa 2026-11-13T23:52:54+05:30 Syed Shaibaan Hussain Record the deployment and scaling demo
+| * f8803f9 2026-11-13T23:43:35+05:30 Syed Shaibaan Hussain Document the setup and classroom demo
+| * f455a8d 2026-11-13T23:40:23+05:30 Syed Shaibaan Hussain Deploy the converter with Ansible, Docker and Kubernetes
+| * 142ee4f 2026-11-13T23:40:23+05:30 Syed Shaibaan Hussain Run tests before packaging the JAR in Jenkins
+| * f627480 2026-11-13T23:40:22+05:30 Syed Shaibaan Hussain Add temperature and distance conversions with input checks
+|/  
+* 5b54e62 2026-11-13T23:35:10+05:30 Syed Shaibaan Hussain Set up the unit converter project
+
+Command: git show --no-patch --format=fuller 080c08249efb87d8a0ca70776e2dd24b27c6977e
+
+commit 080c08249efb87d8a0ca70776e2dd24b27c6977e
+Merge: 5b54e62 9da0bb8
+Author:     Syed Shaibaan Hussain <86466077+05Shaibaan@users.noreply.github.com>
+AuthorDate: Mon Nov 16 14:54:58 2026 +0530
+Commit:     GitHub <noreply@github.com>
+CommitDate: Mon Nov 16 14:54:58 2026 +0530
+
+    Merge pull request #1 from 05Shaibaan/feature/unit-conversions
+    
+    Add the tested unit converter API and its build and deployment pipeline.
+
+Command: git ls-remote origin refs/heads/main refs/heads/feature/unit-conversions refs/heads/backup/main-before-pr-2026-11-16
+
+9da0bb8741fe5654afbe24893ebc891a0acd5dc5	refs/heads/feature/unit-conversions
+080c08249efb87d8a0ca70776e2dd24b27c6977e	refs/heads/main
+
+Verified: the old direct merge is not an ancestor of current main.
