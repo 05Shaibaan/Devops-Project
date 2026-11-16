@@ -1,0 +1,6 @@
+2026-11-13T23:41:09+05:30
+Command: /usr/bin/docker images unit-converter:1.0
+
+WARNING: This output is designed for human readability. For machine-readable output, please use --format.
+IMAGE                ID             DISK USAGE   CONTENT SIZE   EXTRA
+unit-converter:1.0   7a25a0f92182        415MB          113MB        
