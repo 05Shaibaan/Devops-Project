@@ -21,9 +21,9 @@ The coordinator's collaborator invitation and handwritten signatures require the
 | --- | --- |
 | Three-route API without a database | `ConversionController.java`; packaged JAR checked through HTTP |
 | Maven artifact | `pom.xml`; `target/unit-converter.jar` built successfully |
-| Feature branch and merge | `main`, `feature/unit-conversions`; merge `8ed7386` |
+| Feature branch and PR merge | `main`, `feature/unit-conversions`; [PR #1](https://github.com/05Shaibaan/Devops-Project/pull/1), merge `080c082`, 16 November 2026 at 14:54:58 IST |
 | GitHub identity | Published commits map to `05Shaibaan`; GitHub shows one contributor |
-| Jenkins SCM, trigger, build and archive | `Jenkinsfile`; build #2 started by an SCM change, completed SUCCESS and archived the JAR |
+| Jenkins SCM, trigger, build and archive | `Jenkinsfile`; build #5 after the PR merge started by an SCM change, completed SUCCESS and archived the JAR |
 | CI enhancement | 15 tests passed before packaging; JUnit result retained in `evidences/logs/jenkins-result.json` |
 | Ansible host and runtime/service setup | `ansible/inventory`, `playbook.yml`, role `converter`; zero failed/unreachable hosts |
 | Variable, handler and initialized role | Role defaults, restart handler and service template; second run `changed=0` |

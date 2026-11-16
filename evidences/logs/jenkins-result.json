@@ -1,9 +1,9 @@
 {
-  "number": 2,
+  "number": 5,
   "result": "SUCCESS",
   "building": false,
-  "timestamp": 1794594246865,
-  "duration": 58816,
+  "timestamp": 1794821121164,
+  "duration": 170586,
   "artifacts": [
     {
       "displayPath": "unit-converter.jar",
@@ -22,7 +22,7 @@
   "tests": {
     "_class": "hudson.tasks.junit.TestResult",
     "testActions": [],
-    "duration": 2.788,
+    "duration": 6.788,
     "empty": false,
     "failCount": 0,
     "passCount": 15,
@@ -34,7 +34,7 @@
             "testActions": [],
             "age": 0,
             "className": "io.github.shaibaan.converter.ConversionControllerTest",
-            "duration": 2.277,
+            "duration": 5.34,
             "errorDetails": null,
             "errorStackTrace": null,
             "failedSince": 0,
@@ -47,13 +47,13 @@
             "skippedSince": 0,
             "status": "PASSED",
             "stderr": null,
-            "stdout": "18:24:39.385 [main] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''\n18:24:39.388 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''\n18:24:39.396 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 7 ms\n"
+            "stdout": "09:27:02.939 [main] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''\n09:27:02.945 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''\n09:27:02.961 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 12 ms\n"
           },
           {
             "testActions": [],
             "age": 0,
             "className": "io.github.shaibaan.converter.ConversionControllerTest",
-            "duration": 0.057,
+            "duration": 0.305,
             "errorDetails": null,
             "errorStackTrace": null,
             "failedSince": 0,
@@ -66,13 +66,13 @@
             "skippedSince": 0,
             "status": "PASSED",
             "stderr": null,
-            "stdout": "18:24:40.055 [main] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''\n18:24:40.055 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''\n18:24:40.056 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 1 ms\n"
+            "stdout": "09:27:04.899 [main] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''\n09:27:04.900 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''\n09:27:04.903 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 3 ms\n"
           },
           {
             "testActions": [],
             "age": 0,
             "className": "io.github.shaibaan.converter.ConversionControllerTest",
-            "duration": 0.014,
+            "duration": 0.041,
             "errorDetails": null,
             "errorStackTrace": null,
             "failedSince": 0,
@@ -85,13 +85,13 @@
             "skippedSince": 0,
             "status": "PASSED",
             "stderr": null,
-            "stdout": "18:24:40.118 [main] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''\n18:24:40.118 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''\n18:24:40.119 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 1 ms\n"
+            "stdout": "09:27:05.199 [main] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''\n09:27:05.203 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''\n09:27:05.205 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 1 ms\n"
           },
           {
             "testActions": [],
             "age": 0,
             "className": "io.github.shaibaan.converter.ConversionControllerTest",
-            "duration": 0.025,
+            "duration": 0.079,
             "errorDetails": null,
             "errorStackTrace": null,
             "failedSince": 0,
@@ -104,13 +104,13 @@
             "skippedSince": 0,
             "status": "PASSED",
             "stderr": null,
-            "stdout": "18:24:40.146 [main] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''\n18:24:40.147 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''\n18:24:40.147 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms\n"
+            "stdout": "09:27:05.279 [main] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''\n09:27:05.280 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''\n09:27:05.281 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 1 ms\n"
           },
           {
             "testActions": [],
             "age": 0,
             "className": "io.github.shaibaan.converter.ConversionControllerTest",
-            "duration": 0.021,
+            "duration": 0.054,
             "errorDetails": null,
             "errorStackTrace": null,
             "failedSince": 0,
@@ -123,13 +123,13 @@
             "skippedSince": 0,
             "status": "PASSED",
             "stderr": null,
-            "stdout": "18:24:40.170 [main] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''\n18:24:40.170 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''\n18:24:40.171 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 1 ms\n"
+            "stdout": "09:27:05.355 [main] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''\n09:27:05.355 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''\n09:27:05.356 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 1 ms\n"
           },
           {
             "testActions": [],
             "age": 0,
             "className": "io.github.shaibaan.converter.ConversionControllerTest",
-            "duration": 0.051,
+            "duration": 0.135,
             "errorDetails": null,
             "errorStackTrace": null,
             "failedSince": 0,
@@ -142,13 +142,13 @@
             "skippedSince": 0,
             "status": "PASSED",
             "stderr": null,
-            "stdout": "18:24:40.193 [main] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''\n18:24:40.193 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''\n18:24:40.194 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 1 ms\n18:24:40.231 [main] WARN org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver -- Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'celsius': Failed to convert value of type 'java.lang.String' to required type 'double'; For input string: \"abc\"]\n"
+            "stdout": "09:27:05.410 [main] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''\n09:27:05.411 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''\n09:27:05.411 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms\n09:27:05.509 [main] WARN org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver -- Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'celsius': Failed to convert value of type 'java.lang.String' to required type 'double'; For input string: \"abc\"]\n"
           },
           {
             "testActions": [],
             "age": 0,
             "className": "io.github.shaibaan.converter.ConversionControllerTest",
-            "duration": 0.018,
+            "duration": 0.052,
             "errorDetails": null,
             "errorStackTrace": null,
             "failedSince": 0,
@@ -161,13 +161,13 @@
             "skippedSince": 0,
             "status": "PASSED",
             "stderr": null,
-            "stdout": "18:24:40.243 [main] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''\n18:24:40.243 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''\n18:24:40.243 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms\n18:24:40.247 [main] WARN org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver -- Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'celsius' for method parameter type double is not present]\n18:24:40.252 [main] WARN org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver -- Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'kilometres' for method parameter type double is not present]\n"
+            "stdout": "09:27:05.540 [main] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''\n09:27:05.540 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''\n09:27:05.541 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms\n09:27:05.550 [main] WARN org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver -- Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'celsius' for method parameter type double is not present]\n09:27:05.574 [main] WARN org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver -- Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'kilometres' for method parameter type double is not present]\n"
           },
           {
             "testActions": [],
             "age": 0,
             "className": "io.github.shaibaan.converter.ConversionControllerTest",
-            "duration": 0.016,
+            "duration": 0.027,
             "errorDetails": null,
             "errorStackTrace": null,
             "failedSince": 0,
@@ -180,13 +180,13 @@
             "skippedSince": 0,
             "status": "PASSED",
             "stderr": null,
-            "stdout": "18:24:40.262 [main] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''\n18:24:40.262 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''\n18:24:40.263 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 1 ms\n"
+            "stdout": "09:27:05.594 [main] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''\n09:27:05.594 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''\n09:27:05.594 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms\n"
           },
           {
             "testActions": [],
             "age": 0,
             "className": "io.github.shaibaan.converter.ConversionControllerTest",
-            "duration": 0.047,
+            "duration": 0.056,
             "errorDetails": null,
             "errorStackTrace": null,
             "failedSince": 0,
@@ -199,13 +199,13 @@
             "skippedSince": 0,
             "status": "PASSED",
             "stderr": null,
-            "stdout": "18:24:40.279 [main] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''\n18:24:40.279 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''\n18:24:40.279 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms\n"
+            "stdout": "09:27:05.625 [main] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''\n09:27:05.626 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''\n09:27:05.626 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms\n"
           },
           {
             "testActions": [],
             "age": 0,
             "className": "io.github.shaibaan.converter.ConversionControllerTest",
-            "duration": 0.016,
+            "duration": 0.131,
             "errorDetails": null,
             "errorStackTrace": null,
             "failedSince": 0,
@@ -218,13 +218,13 @@
             "skippedSince": 0,
             "status": "PASSED",
             "stderr": null,
-            "stdout": "18:24:40.328 [main] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''\n18:24:40.328 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''\n18:24:40.329 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 1 ms\n"
+            "stdout": "09:27:05.774 [main] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''\n09:27:05.774 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''\n09:27:05.775 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 1 ms\n"
           },
           {
             "testActions": [],
             "age": 0,
             "className": "io.github.shaibaan.converter.ConversionControllerTest",
-            "duration": 0.024,
+            "duration": 0.038,
             "errorDetails": null,
             "errorStackTrace": null,
             "failedSince": 0,
@@ -237,13 +237,13 @@
             "skippedSince": 0,
             "status": "PASSED",
             "stderr": null,
-            "stdout": "18:24:40.350 [main] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''\n18:24:40.350 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''\n18:24:40.351 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 1 ms\n"
+            "stdout": "09:27:05.828 [main] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''\n09:27:05.829 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''\n09:27:05.829 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms\n"
           },
           {
             "testActions": [],
             "age": 0,
             "className": "io.github.shaibaan.converter.ConversionControllerTest",
-            "duration": 0.021,
+            "duration": 0.022,
             "errorDetails": null,
             "errorStackTrace": null,
             "failedSince": 0,
@@ -256,13 +256,13 @@
             "skippedSince": 0,
             "status": "PASSED",
             "stderr": null,
-            "stdout": "18:24:40.384 [main] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''\n18:24:40.385 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''\n18:24:40.385 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms\n"
+            "stdout": "09:27:05.875 [main] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''\n09:27:05.876 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''\n09:27:05.876 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms\n"
           },
           {
             "testActions": [],
             "age": 0,
             "className": "io.github.shaibaan.converter.ConversionControllerTest",
-            "duration": 0.018,
+            "duration": 0.024,
             "errorDetails": null,
             "errorStackTrace": null,
             "failedSince": 0,
@@ -275,13 +275,13 @@
             "skippedSince": 0,
             "status": "PASSED",
             "stderr": null,
-            "stdout": "18:24:40.405 [main] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''\n18:24:40.406 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''\n18:24:40.406 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms\n"
+            "stdout": "09:27:05.912 [main] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''\n09:27:05.912 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''\n09:27:05.913 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 1 ms\n"
           },
           {
             "testActions": [],
             "age": 0,
             "className": "io.github.shaibaan.converter.ConversionControllerTest",
-            "duration": 0.017,
+            "duration": 0.039,
             "errorDetails": null,
             "errorStackTrace": null,
             "failedSince": 0,
@@ -294,13 +294,13 @@
             "skippedSince": 0,
             "status": "PASSED",
             "stderr": null,
-            "stdout": "18:24:40.429 [main] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''\n18:24:40.430 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''\n18:24:40.430 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms\n"
+            "stdout": "09:27:05.942 [main] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''\n09:27:05.951 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''\n09:27:05.951 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms\n"
           },
           {
             "testActions": [],
             "age": 0,
             "className": "io.github.shaibaan.converter.ConversionControllerTest",
-            "duration": 0.015,
+            "duration": 0.025,
             "errorDetails": null,
             "errorStackTrace": null,
             "failedSince": 0,
@@ -313,10 +313,10 @@
             "skippedSince": 0,
             "status": "PASSED",
             "stderr": null,
-            "stdout": "18:24:40.446 [main] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''\n18:24:40.446 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''\n18:24:40.447 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms\n"
+            "stdout": "09:27:05.976 [main] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''\n09:27:05.976 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''\n09:27:05.977 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 1 ms\n"
           }
         ],
-        "duration": 2.788,
+        "duration": 6.788,
         "enclosingBlockNames": [
           "Test"
         ],

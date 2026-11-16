@@ -46,7 +46,7 @@ flowchart LR
 - `evidences/`: this project's screenshots and original execution logs.
 - [`reports/DevOps_Report_Syed_Shaibaan_Hussain.pdf`](reports/DevOps_Report_Syed_Shaibaan_Hussain.pdf): college-format report, with editable LaTeX in `reports/overleaf/`.
 
-Both `main` and `feature/unit-conversions` are retained to show the merge workflow. The CI enhancement is automated testing; the deployment enhancements are health probes and external configuration through a ConfigMap.
+Both `main` and `feature/unit-conversions` are retained. The feature was merged through [pull request #1](https://github.com/05Shaibaan/Devops-Project/pull/1) on **16 November 2026 at 14:54:58 IST**, using GitHub's pull-request merge operation. Further changes should also be submitted through a PR. The CI enhancement is automated testing; the deployment enhancements are health probes and external configuration through a ConfigMap.
 
 This is a local classroom demo. Run Ansible and Kubernetes from Ubuntu or WSL with systemd and Docker available. No paid cloud account is required.
 
